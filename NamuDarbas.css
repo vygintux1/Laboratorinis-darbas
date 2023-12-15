@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.color-box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 2px solid #333;
+    margin-bottom: 1em;
+}
+
+.device {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    width: 200px;
+}
+
+.device h3 {
+    margin-top: 0;
+}
+
+.device button {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.device button:hover {
+    background-color: #45a049;
+}
+

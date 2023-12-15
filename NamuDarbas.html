@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <link rel="stylesheet" href="NamuDarbas.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Home Control</h1>
+    </header>
+    
+    <div class="container" id="devicesContainer">
+
+        <div class="device">
+            <h3>Light</h3>
+            <button id="lightButton" onclick="toggleDevice('light')">Turn Off</button>
+        </div>
+
+        <div class="device" id="thermostat">
+            <h3>Thermostat</h3>
+            <input type="range" min="0" max="38" value="18" id="temperatureSlider" oninput="updateTemperature()">
+            <p id="temperatureValue">18°C</p>
+        </div>
+
+        <div class="device">
+            <h3>Camera</h3>
+            <button id="cameraSwitch" onclick="toggleCamera()">Switch</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="color-box" id="colorBox"></div>
+        <div id="light">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="camera-box" id="cameraBox">
+            <div id="CAM">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="NamuDarbas.js"></script>
+</body>
+</html>
